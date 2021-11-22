@@ -48,7 +48,7 @@ class Example(QMainWindow):
 
     def draw_rect(self, qp):
         # Задаем кисть
-        qp.setBrush(QColor(240, 232, 17))
+        qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
         size = randint(10, 50)
         if self.signal == 1:
             qp.drawEllipse(self.x - size // 2, self.y - size // 2, size, size)
